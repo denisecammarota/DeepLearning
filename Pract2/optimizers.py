@@ -30,7 +30,7 @@ class SGD(Optimizer):
             X_batch = X1[j*self.bs:(j+1)*self.bs,:] #seleccion de batch
             Y_batch = Y1[j*self.bs:(j+1)*self.bs]
             scores = model.return_scores(X_batch) #variable auxiliar para el calculo de despues 
-            model.grad = loss.gradient(scores,Y_batch)  #esto es para el backwards despues, gradiente del ultimo paso del loss
+            model.grad = loss.gradient(scores,Y_batch)#/self.bs  #esto es para el backwards despues, gradiente del ultimo paso del loss
             model.backward(X_batch, Y_batch,self.lr) #backwards de model
     def update_weights(self, W, gradW):
         W -= self.lr * gradW # SGD, paso de optimizacion despues de calcular gradW

@@ -1,0 +1,2 @@
+algo anda el colabs: 5e-5 1e-2 (sigmoid)
+notebook: 5e-4  1e-4 (e-3)
