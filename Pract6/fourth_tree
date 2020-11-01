@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<ShelveLoc_Good &le; 0.5<br/>mse = 7.872<br/>samples = 320<br/>value = 7.565>, fillcolor="#f3c6a5"] ;
+1 [label=<Price &le; 105.5<br/>mse = 5.735<br/>samples = 248<br/>value = 6.804>, fillcolor="#f6d5be"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Age &le; 60.5<br/>mse = 4.945<br/>samples = 82<br/>value = 8.232>, fillcolor="#f0b88f"] ;
+1 -> 2 ;
+3 [label=<mse = 3.675<br/>samples = 46<br/>value = 9.113>, fillcolor="#eca572"] ;
+2 -> 3 ;
+4 [label=<mse = 4.31<br/>samples = 36<br/>value = 7.106>, fillcolor="#f5cfb4"] ;
+2 -> 4 ;
+5 [label=<ShelveLoc_Bad &le; 0.5<br/>mse = 4.621<br/>samples = 166<br/>value = 6.099>, fillcolor="#f9e4d5"] ;
+1 -> 5 ;
+6 [label=<mse = 4.115<br/>samples = 118<br/>value = 6.622>, fillcolor="#f7d9c4"] ;
+5 -> 6 ;
+7 [label=<mse = 3.542<br/>samples = 48<br/>value = 4.814>, fillcolor="#ffffff"] ;
+5 -> 7 ;
+8 [label=<Price &le; 135.0<br/>mse = 6.377<br/>samples = 72<br/>value = 10.185>, fillcolor="#e88f4f"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<mse = 4.714<br/>samples = 58<br/>value = 10.85>, fillcolor="#e58139"] ;
+8 -> 9 ;
+10 [label=<mse = 3.845<br/>samples = 14<br/>value = 7.43>, fillcolor="#f4c8a9"] ;
+8 -> 10 ;
+}
