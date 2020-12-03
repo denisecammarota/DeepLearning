@@ -1,0 +1,11 @@
+Archivos y explicaciones de qué es cada uno
+1) matplotlibrc.py es un theme para matplotlib que usé para hacer los gráficos 
+2) E1_LSTM_Naive_BRC.py es un modelado usando una capa LSTM de los datos de Bariloche
+3) E1_LSTM_Naive_CABA.py es idem anterior, pero para CABA
+4) E1_LSTM_Naive_BuenosAires.py es idem anteriores, pero para Buenos Aires
+5) E2_Stacked_LSTM_Provs.py es usar una arquitectura de varias LSTM para predecir para todas las localidades
+6) E3_BiDirectionalLSTM_Provs.py es con una arquitectura del tipo BiDirectional LSTM para todas las localidades
+7) E4_LSTM_Provs.py es la otra estrategia que intente, tratando de tomar 10 días y predecir los 10 siguientes, yendo de a un día en cada paso.
+
+Comentario: Los datos están en el drive que pasaron, con la explicacion de dónde están. 
+Para que funcionen los programas, deben estar en una carpeta que se llame 'Datos'
